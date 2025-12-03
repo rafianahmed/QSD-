@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QSD Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>QSD Calculator</h1>
+
+    <label>Safe Firm Fixed Rate (%)</label>
+    <input id="safeFixed" type="number" step="0.01">
+
+    <label>Risky Firm Fixed Rate (%)</label>
+    <input id="riskyFixed" type="number" step="0.01">
+
+    <label>Safe Firm Floating Spread (%)</label>
+    <input id="safeFloat" type="number" step="0.01">
+
+    <label>Risky Firm Floating Spread (%)</label>
+    <input id="riskyFloat" type="number" step="0.01">
+
+    <button onclick="calculateQSD()">Calculate QSD</button>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
